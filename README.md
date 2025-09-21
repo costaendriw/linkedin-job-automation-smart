@@ -35,7 +35,7 @@ Sistema avançado de automação para LinkedIn com **filtragem inteligente** bas
 ### 1. Clone ou baixe o projeto
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/costaendriw/linkedin-job-automation-smart.git>
 cd linkedin-automation-smart
 ```
 
