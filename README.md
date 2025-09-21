@@ -2,40 +2,40 @@
 
 Sistema avançado de automação para LinkedIn com **filtragem inteligente** baseada no seu perfil, usando **Playwright** para compatibilidade total com **Chrome 140+**.
 
-## ✨ Características Principais
+## Características Principais
 
-- **🎯 Filtragem Inteligente**: Aproveita as recomendações do próprio LinkedIn
-- **🚀 Playwright Engine**: Funciona nativamente com Chrome 140+ sem ChromeDriver
-- **🔒 Anti-Detecção Avançada**: Configurações específicas para evitar detecção
-- **📊 Interface Moderna**: GUI intuitiva com logs coloridos e controles avançados
-- **⚡ Performance Superior**: 2x mais rápido que soluções baseadas em Selenium
-- **🛡️ Estabilidade Total**: Sem problemas de compatibilidade de versão
+- **Filtragem Inteligente**: Aproveita as recomendações do próprio LinkedIn
+- **Playwright Engine**: Funciona nativamente com Chrome 140+ sem ChromeDriver
+- **Anti-Detecção Avançada**: Configurações específicas para evitar detecção
+- **Interface Moderna**: GUI intuitiva com logs coloridos e controles avançados
+- **Performance Superior**: 2x mais rápido que soluções baseadas em Selenium
+- **Estabilidade Total**: Sem problemas de compatibilidade de versão
 
-## 🎯 Sistema de Filtragem Inteligente
+## Sistema de Filtragem Inteligente
 
 ### Estratégia Dupla:
 1. **Prioridade**: Vagas recomendadas pelo LinkedIn ("Vagas que mais combinam com seu perfil")
 2. **Backup**: Busca tradicional com filtros personalizados
 
 ### Filtros Baseados no Seu Perfil:
-- ✅ **Skills Matching**: Analisa suas competências vs requisitos da vaga
-- ✅ **Nível de Experiência**: Evita vagas sênior se você é júnior
-- ✅ **Termos Indesejados**: Pula vagas com termos que você quer evitar
-- ✅ **Modalidade de Trabalho**: Filtra por remoto, presencial ou híbrido
-- ✅ **Compatibilidade Score**: Sistema de pontuação inteligente
+- Skills Matching: Analisa suas competências vs requisitos da vaga
+- Nível de Experiência: Evita vagas sênior se você é júnior
+- Termos Indesejados: Pula vagas com termos que você quer evitar
+- Modalidade de Trabalho: Filtra por remoto, presencial ou híbrido
+- Compatibilidade Score: Sistema de pontuação inteligente
 
-## 📋 Requisitos
+## Requisitos
 
 - Python 3.8 ou superior
 - Chrome/Chromium instalado (qualquer versão moderna)
 - Conta no LinkedIn
 
-## 🔧 Instalação
+## Instalação
 
-### 1. Clone ou baixe o projeto
+### 1. Clone o projeto
 
 ```bash
-git clone <https://github.com/costaendriw/linkedin-job-automation-smart.git>
+git clone <repository-url>
 cd linkedin-automation-smart
 ```
 
@@ -45,21 +45,13 @@ cd linkedin-automation-smart
 pip install -r requirements.txt
 ```
 
-**Nota:** O tkinter já vem incluído no Python padrão, então não precisa ser instalado separadamente.
-
 ### 3. Instale os navegadores do Playwright
 
 ```bash
 playwright install chromium
 ```
 
-Para instalar todos os navegadores (opcional):
-
-```bash
-playwright install
-```
-
-## 🚀 Como Usar
+## Como Usar
 
 ### 1. Execute o programa
 
@@ -82,12 +74,11 @@ Na seção **"Configuração do Seu Perfil"**:
 
 ### 4. Teste e execute
 
-- Clique em **"Testar Navegador"** primeiro (recomendado)
+- Clique em **"Testar Navegador"** primeiro
 - Clique em **"Iniciar Automação Smart"**
 - Acompanhe o progresso nos logs coloridos
-- O navegador abrirá e executará as ações automaticamente
 
-## 🎯 Como Funciona a Filtragem Inteligente
+## Como Funciona
 
 ### Estratégia Principal - Recomendações do LinkedIn:
 1. **Login** no LinkedIn
@@ -96,18 +87,13 @@ Na seção **"Configuração do Seu Perfil"**:
 4. **Filtra** baseado em suas skills e termos a evitar
 5. **Salva** apenas vagas compatíveis
 
-### Estratégia Backup - Busca Tradicional:
-1. Se não encontrar recomendações, faz busca por palavras-chave
-2. Aplica os mesmos filtros inteligentes
-3. Processa vagas dos resultados de busca
-
 ### Critérios de Compatibilidade:
-- ✅ **Pelo menos 1 skill match** (suas competências vs requisitos)
-- ❌ **Zero termos indesejados** (evita cargos sêniores se você é júnior)
-- ✅ **Nível apropriado** (baseado na sua configuração)
-- ✅ **Modalidade de trabalho** (remoto, presencial, híbrido)
+- Pelo menos 1 skill match (suas competências vs requisitos)
+- Zero termos indesejados (evita cargos sêniores se você é júnior)
+- Nível apropriado (baseado na sua configuração)
+- Modalidade de trabalho (remoto, presencial, híbrido)
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 linkedin-automation-smart/
@@ -122,23 +108,18 @@ linkedin-automation-smart/
 └── README.md                    # Esta documentação
 ```
 
-## ⚙️ Configurações Avançadas
+## Configurações Avançadas
 
 ### Interface Otimizada:
 - **Logs Coloridos**: Verde (sucesso), vermelho (erro), roxo (compatibilidade)
 - **Controles de Log**: Limpar, salvar, auto-scroll
 - **Scrollbar Inteligente**: Interface sempre acessível
-- **Tela Expandida**: 750x900 para melhor visualização
 
 ### Modo Headless:
 - Marque "Modo invisível" para execução mais rápida
 - Recomendado para uso em segundo plano
 
-### Anti-Detecção:
-- Deixe "Anti-detecção avançada" marcado
-- Remove indicadores de automação do navegador
-
-## 🔍 Exemplo de Configuração
+## Exemplos de Configuração
 
 ### Para Desenvolvedor Júnior:
 ```
@@ -156,24 +137,14 @@ Nível: Pleno
 Modalidade: Híbrido
 ```
 
-### Para Estagiário:
-```
-Suas Skills: Python, HTML, CSS, JavaScript
-Evitar termos: Senior, Pleno, Junior, Especialista
-Nível: Estágio
-Modalidade: Todas
-```
+## Resolução de Problemas
 
-## 🐛 Resolução de Problemas
+### Erro de instalação do tkinter:
+Se receber erro sobre tkinter, ignore-o. O tkinter já vem incluído no Python padrão.
 
-### Erro comum de instalação:
-
-Se você receber o erro `ERROR: No matching distribution found for tkinter`, ignore-o. O tkinter já vem incluído no Python padrão e não precisa ser instalado via pip.
-
-### Problemas de instalação do Playwright:
-
+### Problemas do Playwright:
 ```bash
-# Se "playwright install" falhar, tente:
+# Se falhar, tente:
 python -m playwright install chromium
 
 # Ou instale manualmente:
@@ -186,43 +157,27 @@ python -m playwright install
 2. Complete verificações de segurança manualmente
 3. Use autenticação de dois fatores se necessário
 
-### Performance Lenta:
-1. Ative o modo headless
-2. Reduza o número máximo de vagas
-3. Verifique sua conexão com internet
-
 ### Vagas Não Compatíveis:
 1. Revise suas skills na configuração
 2. Ajuste os termos a evitar
 3. Verifique se as recomendações estão ativadas
 
-## 📊 Comparação: Smart vs Tradicional
-
-| Recurso | Smart Edition | Versão Tradicional |
-|---------|---------------|-------------------|
-| Filtragem | ✅ Inteligente baseada no perfil | ⚠️ Apenas palavras-chave |
-| Fonte de vagas | ✅ Recomendações do LinkedIn | ❌ Busca manual |
-| Compatibilidade | ✅ Análise de skills | ❌ Sem análise |
-| Precisão | ✅ Alta (90%+) | ⚠️ Média (60%) |
-| Velocidade | ✅ 2x mais rápido | ⚠️ Mais lento |
-| Manutenção | ✅ Baixa | ❌ Alta |
-
-## 🔒 Considerações Éticas
+## Considerações Éticas
 
 Este projeto é para fins **educacionais e de automação pessoal**. Use com responsabilidade:
 
-- ⚠️ Respeite os termos de serviço do LinkedIn
-- ⚠️ Não abuse da automação (use delays adequados)
-- ⚠️ Mantenha suas credenciais seguras
-- ⚠️ Use para otimizar SUA busca de emprego
+- Respeite os termos de serviço do LinkedIn
+- Não abuse da automação (use delays adequados)
+- Mantenha suas credenciais seguras
+- Use para otimizar SUA busca de emprego
 
-## 🆘 Teste de Funcionamento
+## Teste de Funcionamento
 
 1. Use o botão **"Testar Navegador"** para verificar se o Playwright está funcionando
 2. Verifique se aparecem logs coloridos indicando sucesso
 3. Confirme que o navegador abre corretamente
 
-## 📝 Logs e Debug
+## Logs e Debug
 
 Os logs mostram em tempo real:
 - **Azul**: Informações gerais
@@ -231,37 +186,18 @@ Os logs mostram em tempo real:
 - **Vermelho**: Erros
 - **Laranja**: Avisos
 
-## 🔄 Atualizações Futuras
-
-Roadmap de melhorias:
-- [ ] Análise de salários das vagas
-- [ ] Integração com outras plataformas
-- [ ] Sistema de relatórios avançado
-- [ ] Dashboard web
-- [ ] Notificações por email
-- [ ] API para integração externa
-
-## 🏆 Vantagens da Smart Edition
-
-1. **Inteligência Real**: Usa o algoritmo do próprio LinkedIn
-2. **Zero Configuração**: Não precisa ajustar filtros complexos
-3. **Maior Precisão**: Vagas realmente compatíveis com seu perfil
-4. **Menos Ruído**: Evita vagas irrelevantes automaticamente
-5. **Aprendizado**: Se adapta às suas preferências
-6. **Futuro-Proof**: Sempre compatível com atualizações
-
-## 🎯 Resultados Esperados
+## Resultados Esperados
 
 Com esta ferramenta você pode:
-- Encontrar vagas 90% mais compatíveis com seu perfil
-- Economizar 80% do tempo de busca manual
-- Salvar 10-30 vagas altamente relevantes por execução
+- Encontrar vagas altamente compatíveis com seu perfil
+- Economizar tempo significativo na busca manual
+- Salvar 10-30 vagas relevantes por execução
 - Evitar automaticamente vagas inadequadas
 - Focar apenas em oportunidades reais
 
 ---
 
-**Smart Edition - Desenvolvido com Playwright e inteligência baseada no seu perfil LinkedIn.**
+**Desenvolvido com Playwright e inteligência baseada no seu perfil LinkedIn.**
 
 ## 📂 Estrutura do Projeto
 
